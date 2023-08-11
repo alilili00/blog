@@ -1,7 +1,7 @@
 +++
 title = "KDE 的配色"
 author = ["alilili"]
-lastmod = 2023-08-25T22:31:48+08:00
+lastmod = 2023-09-18T00:27:16+08:00
 draft = false
 +++
 

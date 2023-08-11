@@ -1,5 +1,13 @@
 ---
-title: about
+title: About
+description: Hugo, the world's fastest framework for building websites
+date: '2019-02-28'
+aliases:
+  - about-us
+  - about-hugo
+  - contact
+license: CC BY-NC-ND
+lastmod: '2020-10-09'
 menu:
     main: 
         weight: -90
@@ -7,16 +15,20 @@ menu:
             icon: user
 ---
 
-底层软件工程师; 启动固件; 体系结构; Linux 内核; 编程语言爱好者;
+Written in Go, Hugo is an open source static site generator available under the [Apache Licence 2.0.](https://github.com/gohugoio/hugo/blob/master/LICENSE) Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
 
-不定期更新启动固件, 体系结构(主要是 ARM, RISC-V), Linux 内核, 程序设计语言和 Linux 桌面环境相关的内容.
+Hugo makes use of a variety of open source projects including:
 
-文章内容会尽量略高于科普水平, 不排除洗稿和错误.
+* https://github.com/yuin/goldmark
+* https://github.com/alecthomas/chroma
+* https://github.com/muesli/smartcrop
+* https://github.com/spf13/cobra
+* https://github.com/spf13/viper
 
-对内容有疑问可以直接通过邮件联系.
+Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.
 
-博客使用 Hugo 框架, stack 主题.
+Hugo is for people who want to hand code their own website without worrying about setting up complicated runtimes, dependencies and databases.
 
-画图工具使用 plantuml.
+Websites built with Hugo are extremelly fast, secure and can be deployed anywhere including, AWS, GitHub Pages, Heroku, Netlify and any other hosting provider.
 
-邮箱地址: alilili0131@gmail.com
+Learn more and contribute on [GitHub](https://github.com/gohugoio).

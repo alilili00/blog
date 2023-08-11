@@ -1,7 +1,7 @@
 +++
 title = "neovim 插件体系"
 author = ["alilili"]
-lastmod = 2023-09-12T07:30:21+08:00
+lastmod = 2023-09-18T00:27:17+08:00
 draft = false
 +++
 
@@ -132,6 +132,18 @@ endfunction
 
 倒数三行是一种自动覆盖所有 Color Scheme 的方法. 我们暂时忽略.
 只看 `highlightDevIcons` 是如何调整 color scheme 的.
+
+{{< highlight python >}}
+        hi_cmd = "hi def Lf_hl_devIcons_{name} gui={gui} guifg={guifg} guibg={guibg} cterm={cterm} ctermfg={ctermfg} ctermbg={ctermbg}".format(
+            name=name,
+            gui=plt.get("gui", "NONE"),
+            guifg=plt.get("guifg", "NONE"),
+            guibg=plt.get("guibg", "NONE"),
+            cterm=plt.get("cterm", "NONE"),
+            ctermfg=plt.get("ctermfg", "NONE"),
+            ctermbg=plt.get("ctermbg", "NONE"),
+        )
+{{< /highlight >}}
 
 
 ## vim(neovim) 插件文件结构 {#vim--neovim--插件文件结构}

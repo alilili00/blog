@@ -1,7 +1,7 @@
 +++
 title = "关于开发者测试与测试框架"
 author = ["alilili"]
-lastmod = 2023-08-25T22:21:23+08:00
+lastmod = 2023-09-18T00:27:16+08:00
 draft = false
 +++
 
@@ -78,43 +78,46 @@ googlttest github 地址： [googletest github](https://github.com/google/google
 -   练习使用模拟对象的代码。 Google Mock会在出现任何违反期望的情况时立即处理。
 
 
-## GTest Runner {#gtest-runner}
+### GTest Runner {#gtest-runner}
 
 
-### 简介 {#简介}
+#### 简介 {#简介}
 
 是一个基于Qt5的自动化运行测试和图形化用户界面. 支持Windows和Linux平台.
 
 
-## GoogltTest UI {#googlttest-ui}
+### GoogleTest UI {#googletest-ui}
 
 
-### 简介 {#简介}
+#### 简介 {#简介}
 
 图形化运行二进制文件的框架.
 
 
-## GTest TAP Listener {#gtest-tap-listener}
+### GTest TAP Listener {#gtest-tap-listener}
 
 
-### 简介 {#简介}
+#### 简介 {#简介}
 
 监听GoogleTest事件, 来充填TAP来实现测试结果输出.
 
 [TAP protocol](https://en.wikipedia.org/wiki/Test_Anything_Protocol)介绍.
 
 
-## gtest parellel {#gtest-parellel}
+### gtest parellel {#gtest-parellel}
 
 
-### 简介 {#简介}
+#### 简介 {#简介}
 
 并行运行程序实现, 二进制文件测试加速.
 
 
-## GoogleTest Adapter {#googletest-adapter}
+### GoogleTest Adapter {#googletest-adapter}
 
 
-### 简介 {#简介}
+#### 简介 {#简介}
 
 是一个VS Code可视化GoogleTest的VS Code插件.
+
+
+## catch2 {#catch2}

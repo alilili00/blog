@@ -1,7 +1,7 @@
 +++
 title = "Linux Kerel 物理内存管理快速参考"
 author = ["alilili"]
-lastmod = 2023-08-25T23:32:28+08:00
+lastmod = 2023-09-18T00:27:16+08:00
 draft = false
 +++
 
