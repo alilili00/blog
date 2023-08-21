@@ -1,6 +1,6 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://alilili00.github.io/blog/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = '李丽丽的博客'
 theme = 'stack'
 
 paginate = 5
