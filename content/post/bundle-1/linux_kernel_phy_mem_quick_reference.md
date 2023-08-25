@@ -1,7 +1,7 @@
 +++
 title = "Linux Kerel 物理内存管理快速参考"
 author = ["alilili"]
-lastmod = 2023-08-25T23:05:08+08:00
+lastmod = 2023-08-25T23:30:28+08:00
 draft = false
 +++
 
@@ -9,9 +9,9 @@ draft = false
 
 UMA 计算机, 是指不存在本地和远程核的计算机. NUMA 是指存在本地和远程核的计算机, 一个核访问本地内存的速度和远程核内存的速度是不同的.
 
-{{< figure src="/ox-hugo/uma.svg" >}}
+{{< figure src="notes/kernel/image/uma.svg" >}}
 
-{{< figure src="/ox-hugo/numa.svg" >}}
+{{< figure src="notes/kernel/image/numa.svg" >}}
 
 FLATMEM(平坦), DISCONTIGMEM(非连续), SPARSEMEM(离散).
 

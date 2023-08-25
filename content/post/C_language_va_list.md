@@ -1,7 +1,7 @@
 +++
 title = "C语言使用变长参数"
 author = ["alilili"]
-lastmod = 2023-08-25T22:06:47+08:00
+lastmod = 2023-08-25T23:29:05+08:00
 draft = false
 +++
 
