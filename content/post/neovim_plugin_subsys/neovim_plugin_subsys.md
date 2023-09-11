@@ -1,18 +1,11 @@
 +++
 title = "neovim 插件体系"
 author = ["alilili"]
-lastmod = 2023-09-12T00:51:33+08:00
+lastmod = 2023-09-12T07:30:21+08:00
 draft = false
 +++
 
-:ID:       3a30186f-e3df-489d-838f-a5579852c39f
-:ROAM_ALIASES: "neovim 插件体系"
-
-
-## vim(neovim) plugin system {#vim--neovim--plugin-system}
-
-
-### vim(neovim) 插件为外部提供的接口 {#vim--neovim--插件为外部提供的接口}
+## vim(neovim) 插件为外部提供的接口 {#vim--neovim--插件为外部提供的接口}
 
 vim 插件和 vim 常见的交互接口(机制)如下. vim 插件通过这些接口, 接受 vim 的输入, 影响 vim 的行为, 并且最终实现特定的功能.
 
@@ -26,13 +19,13 @@ vim 插件和 vim 常见的交互接口(机制)如下. vim 插件通过这些接
 -   file type
 
 
-### 以 LeaderF 插件为例 {#以-leaderf-插件为例}
+## 以 LeaderF 插件为例 {#以-leaderf-插件为例}
 
 以 LeaderF 插件为例来讲解上面的接口, LeaderF 是一个 neovim 下的模糊搜索插件.
 以其搜索文件的功能为例.
 
 
-#### vim 脚本全局变量 {#vim-脚本全局变量}
+### vim 脚本全局变量 {#vim-脚本全局变量}
 
 他暴露给 `LeaderF` 暴露给我们了一个名为 `Lf_ShortcutF` 的全局变量.
 
@@ -44,7 +37,7 @@ vim 插件和 vim 常见的交互接口(机制)如下. vim 插件通过这些接
 在插件中的实现方式也很简单.
 
 
-#### vim 插件定义快捷键 {#vim-插件定义快捷键}
+### vim 插件定义快捷键 {#vim-插件定义快捷键}
 
 插件里使用 nnoremap 命令把快捷键 `Lf_ShortcutF` 映射到 `LeaderfFile` 命令上.
 也就说, 我们在 vim 里键入 'C-p' 上后会触发 vim 命令.
@@ -58,7 +51,7 @@ exec 'nnoremap <silent><unique> ' g:Lf_ShortcutF ':<C-U>LeaderfFile<CR>'
 {{< figure src="roam/vim(neovim)_plugin_system/20230903-222230_screenshot.png" >}}
 
 
-#### vim 插件定义命令 {#vim-插件定义命令}
+### vim 插件定义命令 {#vim-插件定义命令}
 
 上面我们说快捷键实际上代表了 vim 的 ****命令**** `LeaderfFile`.
 插件会把自己的功能定义成命令或者是函数让使用者调用.
@@ -86,7 +79,7 @@ command! -nargs=* -bang -complete=customlist,leaderf#Any#parseArguments Leaderf 
 `-complete=customlist,leaderf#Any#parseArguments`: 表示用 `leaderf#Any#parseArguments` 函数做自动补全.
 
 
-#### vim 插件定义函数 {#vim-插件定义函数}
+### vim 插件定义函数 {#vim-插件定义函数}
 
 我们可以搜到 `leaderf#Any#start` 这个函数. vim 插件函数签名前面的前缀可以理解为函数作用域.
 
@@ -125,7 +118,7 @@ endfunction
 {{< /highlight >}}
 
 
-#### vim color scheme {#vim-color-scheme}
+### vim color scheme {#vim-color-scheme}
 
 完成窗口创建之后调用如下命令调整 color scheme
 
@@ -141,7 +134,7 @@ endfunction
 只看 `highlightDevIcons` 是如何调整 color scheme 的.
 
 
-### vim(neovim) 插件文件结构 {#vim--neovim--插件文件结构}
+## vim(neovim) 插件文件结构 {#vim--neovim--插件文件结构}
 
 -   autoload:
 -   plugin:
